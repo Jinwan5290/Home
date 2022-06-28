@@ -1,11 +1,9 @@
 import './App.css';
-import Header from './components/Header/Header';
-
+import BaseLayout from './components/Layout';
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      body
+      <BaseLayout></BaseLayout>
     </div>
   );
 }

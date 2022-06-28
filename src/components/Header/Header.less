@@ -1,3 +1,24 @@
-.app-header {
-  height: 52px;
+.base-header {
+  height: 53px !important;
+  padding: 0 24px !important;
+  position: 'fixed' !important;
+  z-index: 1 !important;
+  width: '100%' !important;
+  border-bottom: 1px solid #F0F2F4;
+  background-color: #fff !important;
+  display: flex;
+  align-items: center;
+  .icon-area {
+    cursor: pointer;
+    overflow: hidden;
+    height: 32px;
+    img {
+      height: 32px;
+      margin-right: 8px;
+      vertical-align: top;
+    }
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 32px;
+  }
 }
