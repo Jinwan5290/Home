@@ -17,7 +17,7 @@ const BaseLayout: React.FC = ()  => {
           Content
         </div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+      <Footer style={{ textAlign: 'center' }}>Jinwan ©2022 Created by Jinwan</Footer>
     </Layout>
   )
 }
