@@ -1,9 +1,14 @@
-import { Breadcrumb, Layout, Menu } from 'antd';
+import { Breadcrumb, Layout } from 'antd';
 import React  from 'react';
-import BaseHeader from '../Header/Header'
-import './index.less'
+import BaseHeader from '../Header/Header';
+import { useRoutes, Outlet } from 'react-router';
+import './index.less';
+import { useGetRoutes } from '../../router'
+
 const {  Content, Footer } = Layout;
 const BaseLayout: React.FC = ()  => {
+ 
+  const RoutesBase = useGetRoutes();
   return  (
     <Layout className='base-layout'>
       <BaseHeader></BaseHeader>
@@ -14,7 +19,8 @@ const BaseLayout: React.FC = ()  => {
           <Breadcrumb.Item>App</Breadcrumb.Item>
         </Breadcrumb>
         <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
-          Content
+        {RoutesBase}
+        <Outlet />
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>Jinwan ©2022 Created by Jinwan</Footer>
