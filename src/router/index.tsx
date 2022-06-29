@@ -7,7 +7,7 @@ const useGetRoutes = () => {
 
   let roterConfig: RouteObject[] = [
     {
-      path: "/Home",
+      path: "/",
       element: <Dashboard />,
       // children: [
       //   {
@@ -16,8 +16,9 @@ const useGetRoutes = () => {
       //   },
       //   { path: "tasks", element: <DashboardTasks /> },
       // ],
+      index: true
     },
-    { path: "/Home/test", element: <Test /> },
+    { path: "/test", element: <Test /> },
   ]
 
   return useRoutes(roterConfig)
