@@ -2,6 +2,7 @@ import Dashboard from '../components/Dashboard'
 import Test from '../components/Test'
 import { useRoutes } from 'react-router'
 import { RouteObject } from "react-router-dom";
+import GridTest from '../pages/grid';
 
 const useGetRoutes = () => {
 
@@ -18,7 +19,12 @@ const useGetRoutes = () => {
       // ],
       index: true
     },
-    { path: "/Home/test", element: <Test /> },
+    { 
+      path: "/Home/test", element: <Test /> 
+    },
+    {
+      path: "/Home/grid", element: <GridTest/>
+    }
   ]
 
   return useRoutes(roterConfig)
